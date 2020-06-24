@@ -81,6 +81,6 @@
     "node": ">=10"
   },
   "dependencies": {
-    "norwegian-national-id-validator": "1.3.8"
+    "norwegian-national-id-validator": "2.0.0"
   }
 }
