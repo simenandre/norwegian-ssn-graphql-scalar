@@ -2,7 +2,7 @@
   "name": "norwegian-ssn-graphql-scalar",
   "version": "1.0.0",
   "description": "Scalar type for Norwegian Social Security Number.",
-  "repository": "github:cobraz/norwegian-ssn-graphql-scalar",
+  "repository": "github:simenandre/norwegian-ssn-graphql-scalar",
   "license": "MIT",
   "sideEffects": false,
   "main": "dist/index.cjs.js",
