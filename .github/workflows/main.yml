@@ -8,12 +8,12 @@ on:
 
 jobs:
   test:
-    name: Testing on Node ${{matrix.node_version}}
+    name: Testing on Node LTS
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Master
         uses: actions/checkout@v3
-      - name: Use Node ${{matrix.node_version}}
+      - name: Use Node LTS
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
