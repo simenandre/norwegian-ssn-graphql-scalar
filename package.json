@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "norwegian-national-id-validator": "3.0.0"
+    "norwegian-national-id-validator": "3.1.1"
   },
   "devDependencies": {
     "@graphql-tools/merge": "^6.0.12",
