@@ -4,13 +4,7 @@
 
 ## Installation
 
-```
-npm install --save norwegian-ssn-graphql-scalar
-```
-
-or
-
-```
+```shell
 yarn add norwegian-ssn-graphql-scalar
 ```
 
@@ -27,14 +21,14 @@ scalar NorwegianSSN
 In your resolver map, first import them:
 
 ```javascript
-import { NorwegianSSNResolver } from 'norwegian-ssn-graphql-scalar';
+import { norwegianSSNResolver } from 'norwegian-ssn-graphql-scalar';
 ```
 
 Then make sure they're in the root resolver map like this:
 
 ```javascript
 const myResolverMap = {
-  NorwegianSSN: NorwegianSSNResolver,
+  NorwegianSSN: norwegianSSNResolver,
 
   Query: {
     // more stuff here
@@ -46,7 +40,7 @@ const myResolverMap = {
 };
 ```
 
-Alternatively, use the default import and ES6's spread operator syntax:
+Alternatively, use the `resolver` export and a spread operator syntax:
 
 ```javascript
 import { resolvers } from 'norwegian-ssn-graphql-scalar';
@@ -103,29 +97,6 @@ const server = new ApolloServer({
       // ... remainder of resolver map ...
     },
   }),
-});
-
-server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
-```
-
-### Usage with apollo-server-express and CommonJS imports
-
-```javascript
-const { ApolloServer } = require('apollo-server-express');
-// Import individual scalars and resolvers
-const {
-  NorwegianSSNResolver,
-  NorwegianSSNTypeDefinition,
-} = require('norwegian-ssn-graphql-scalar');
-
-const server = new ApolloServer({
-  typeDefs: [NorwegianSSNTypeDefinition, ...yourTypeDefs],
-  resolvers: [
-    { NorwegianSSN: NorwegianSSNResolver }, // <-- Notable difference here
-    ...yourResolvers,
-  ],
 });
 
 server.listen().then(({ url }) => {

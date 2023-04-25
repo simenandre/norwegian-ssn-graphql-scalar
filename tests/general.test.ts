@@ -1,8 +1,5 @@
 import { makeExecutableSchema } from '@graphql-tools/schema';
-import {
-  typeDefs as scalarTypeDefs,
-  resolvers as scalarResolvers,
-} from '../src';
+import { typeDefs as scalarTypeDefs, resolvers as norwegianResolvers } from '../src/main';
 import { mergeTypeDefs, mergeResolvers } from '@graphql-tools/merge';
 import { GraphQLSchema, graphql } from 'graphql';
 
@@ -19,7 +16,7 @@ const fooResolvers = {
 };
 
 const typeDefs = mergeTypeDefs([fooQuery, ...scalarTypeDefs]);
-const resolvers = mergeResolvers([fooResolvers, scalarResolvers]);
+const resolvers = mergeResolvers([fooResolvers, norwegianResolvers]);
 
 describe('Common', () => {
   it('should create a valid schema', async () => {
@@ -37,6 +34,6 @@ describe('Common', () => {
       `,
     });
     expect(result.errors).toBeFalsy();
-    expect(result.data.foo).toBe(FOO);
+    expect(result.data && result.data['foo']).toBe(FOO);
   });
 });
