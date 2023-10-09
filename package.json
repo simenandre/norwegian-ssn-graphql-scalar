@@ -6,7 +6,7 @@
   "license": "MIT",
   "module": "dist/main.js",
   "typings": "dist/main.d.ts",
-  "packageManager": "pnpm@8.8.0",
+  "packageManager": "pnpm@8.9.0",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
