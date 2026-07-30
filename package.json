@@ -16,7 +16,7 @@
     "norwegian-national-id-validator": "3.1.1"
   },
   "devDependencies": {
-    "@bjerk/eslint-config": "^4.0.0",
+    "@bjerk/eslint-config": "^6.0.0",
     "@graphql-tools/merge": "^9.0.0",
     "@graphql-tools/schema": "^10.0.0",
     "@types/jest": "^29.5.1",
