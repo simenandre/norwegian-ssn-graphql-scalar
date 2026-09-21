@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   norwegian-national-id-validator:
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.2.0
+    version: 3.2.0
 
 devDependencies:
   '@bjerk/eslint-config':
@@ -3289,8 +3289,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /norwegian-national-id-validator@3.1.1:
-    resolution: {integrity: sha512-rP97dFo5S9TqtG7LjtDRtY9rMDZHmE2FMQOkZ4lMr5T34I5jF/qYjolI0aZ+Xa83vm+/Q5rYfqjqD/FjtUl5sA==}
+  /norwegian-national-id-validator@3.2.0:
+    resolution: {integrity: sha512-ZecttIIPXiUhSfKiab6KoS+h2XO9f4Ucs7YgY5PGXBEbDBzWzzljFPMkPycnRh4kPABxaf1ANLj1v7UugShOXg==}
     dev: false
 
   /npm-run-path@4.0.1:
